@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/nerse.css">
+
+</head>
+
+<body>
+  <div class="bgcontainer">
+    <div class="container">
+      <table id="example" class="table table-striped" style="width:100%">
+        <thead>
+          <tr>
+            <th>Nurse Id</th>
+            <th>Nurse Name</th>
+            <th>Department</th>
+            
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+   
+<script src="../js/nerse.js"></script>
+
+<script>
+  
+
+var result;
+
+function getData() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://localhost:3000/nurse');
+    xhr.onload = function() {
+        if (xhr.status === 200,xhr.readyState==4) {
+            const data = JSON.parse(xhr.response);
+             result=data.result;
+             display()
+        } else {
+            console.error('Error:', xhr.statusText);
+        }
+    };
+    xhr.onerror = function() {
+        console.error('Error:', xhr.statusText);
+    };
+    xhr.send();
+}
+ 
+  
+
+
+
+
+
+
+
+
+
+function display() {
+    
+    
+    
+    var cartona = "";
+    for (var i = 0; i < result.length; i++) {
+        cartona += `
+            <tr>
+                
+                <td>${result[i].NID}</td>
+                <td>${result[i].Nurse_Name}</td>
+                <td>${result[i].N_Depart}</td>
+                
+            </tr>`;
+    }
+    // Add the generated rows to the tbody of the table
+    document.getElementById("tbody").innerHTML=cartona;
+}
+getData();
+ 
+</script>
+  
+</body>
+
+</html>

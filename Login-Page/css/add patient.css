@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url(../photos/ICU3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg{
+  background-color: rgba(rgb(255, 248, 248), rgb(230, 244, 230), rgb(255, 255, 255),0.6) !important;
+}

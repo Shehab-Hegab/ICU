@@ -1,0 +1,35 @@
+.bgcontainer {
+  height: 100vh;
+            width: 100%;
+            background-image: url("../photos/ICU3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+}
+.container {
+  background: white;
+  opacity: 90%;
+}
+
+/* Delete Button Functionality */
+.delete-button {
+  background-color: rgb(0, 130, 230);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Delete Button HOVER Functionality */
+.delete-button:hover {
+  opacity: 0.8;
+}

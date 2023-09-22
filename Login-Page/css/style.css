@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #90e0ef;
+  --secondary-color: #00b4d8;
+  --tertiary-color: #0077b6;
+  --gray-color: #b0b0b0;
+}
+
+.eye-container {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.581);
+  border-radius: 10px;
+  padding: 45px;
+  width: 375px;
+  max-width: 95%;
+  box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 10%);
+}
+
+@media (max-width: 480px) {
+  .box {
+    padding: 75px 25px;
+  }
+}
+
+.box h1 {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.box form label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.box form div {
+  display: flex;
+  align-items: center;
+}
+
+.box form div:hover {
+  border-bottom-color: var(--secondary-color);
+}
+
+.box form div:first-of-type {
+  margin-bottom: 35px;
+}
+
+.box form div i {
+  font-size: 15px;
+  padding-left: 10px;
+  color: var(--gray-color);
+}
+
+.box form div:hover i {
+  color: var(--secondary-color);
+}
+
+.box form div input::placeholder {
+  opacity: 1;
+  color: var(--gray-color);
+  font-size: 12px;
+}
+
+.box a:hover {
+  color: var(--secondary-color);
+}
+
+.box form .forgot {
+  margin-top: 15px;
+  float: right;
+}
+
+.box form input[type="submit"] {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  margin-top: 45px;
+  border-radius: 250px;
+}
+
+.box form input[type="submit"]:hover {
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.bgcontainer {
+  height: 100%;
+  width: 100% !important;
+  background-image: url("../photos/ICU3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: rgba(0, 130, 230, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit:link,
+.submit:active {
+  background-color: #00b4d8;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 auto;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  transition: margin-left 0.3s ease;
+}
+
+
+
+
+.submit:hover,
+.submit:visited {
+  color: white !important;
+  text-decoration: none;
+  margin-left: 5;
+  
+   /* Move the button 10px to the left on hover */
+}
+
+
+.username {
+  font-size: 12px;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  min-width: 0;
+  flex: 1;
+  background-color: tra;
+}
+
+.textInput {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: transparent;
+  border: none;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+#errorMessage {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 18px 10px;
+  color: red;
+  display: inline-block;
+  padding: 5px;
+}

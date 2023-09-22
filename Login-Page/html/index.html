@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bgcontainer">
+        <div class="box">
+          <h1>Login</h1>
+          <form onsubmit="return validateForm()">
+            <label class="label">Username</label>
+            <div>
+              <div class="textInput">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  id="username"
+                  class="username"
+                  type="text"
+                  placeholder="Enter Username"
+                />
+              </div>
+            </div>
+            <label class="label">Password</label>
+            <div class="eye-container">
+              <div class="textInput">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  id="password"
+                  class="username"
+                  type="password"
+                  placeholder="Enter Password"
+                />
+              </div>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+            <a href="#" class="submit"> Log In </a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

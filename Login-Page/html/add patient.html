@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/add patient.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="d-flex justify-content-center   align-items-center vh-100      ">
+    <div class=" w-50  form-control bg ">
+      <div class="container  w-100 pt-5 pb-5  ">
+
+        <h3>Add patient</h3>
+
+
+        <div class="row   ">
+
+
+          <div class="mb-3 col-6">
+            <label class="form-label fw-bolder ">First Name</label>
+            <input type="text" class="form-control " id="Fname" placeholder="First Name" required>
+
+          </div>
+
+
+          <div class="mb-3 col-6">
+            <label class="form-label fw-bolder ">Last Name</label>
+            <input type="text" class="form-control " id="Lname" placeholder="Last Name" required>
+          </div>
+
+
+
+          <div class="mb-3 col-6">
+            <label class="form-label fw-bolder ">SSN</label>
+            <input type="number" class="form-control " id="PSSN" placeholder="SSN" required>
+          </div>
+
+
+          <div class="mb-3 col-6">
+            <label class="form-label fw-bolder ">Address</label>
+            <input type="text" class="form-control " id="Address" placeholder="Address">
+          </div>
+
+
+
+
+
+          <div class="mb-3 col-6">
+            <label class="form-label fw-bolder ">Age</label>
+            <input type="number" class="form-control " id="DOB" placeholder="age  " required>
+          </div>
+
+
+
+
+
+
+          <div class="col-6 pt-1">
+            <label for="" class="pb-1 fw-bolder">Room NO</label>
+            <select class="form-select  " name="roomnum" id="roomnum" required aria-label="Default select example">
+
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+
+
+            </select>
+
+
+          </div>
+
+
+
+          <div class="col-6 pt-1">
+            <label for="" class="pb-1 fw-bolder">Department</label>
+            <select class="form-select  " name="Department" id="Department" required
+              aria-label="Default select example">
+
+              <option value="Medical">Medical</option>
+              <option value="Surgical">Surgical</option>
+              <option value="Neonatal">Neonatal</option>
+              <option value="Cardiac">Cardiac</option>
+
+
+
+            </select>
+
+
+          </div>
+
+          <div class="mb-3 col-6">
+            <label class="form-label fw-bolder ">Phone No</label>
+            <input type="text" class="form-control " id="Phone_No" placeholder="Phone No" required>
+
+          </div>
+
+          
+
+          
+
+
+          <div class="col-6  ">
+
+            <h5 class="pt-2">Gender</h5>
+
+            <div class="d-flex ">
+              <div class="pe-2">
+                <label for="" class="fw-bold" name="Male">Male</label>
+                <input type="radio" class="form-check-input" name="gender" id="gender " value="male">
+
+
+              </div>
+
+
+              <div class="">
+                <label for="" class="fw-bold" name="female">Female</label>
+                <input type="radio" class="form-check-input" name="gender" id="gender" value="female">
+
+
+              </div>
+            </div>
+
+            <div class="mb-3 col-12">
+            <p class="  text-danger  d-none" id="valid"> please fill the form completely</p>
+            
+
+          </div>
+
+
+          </div>
+          <div class="d-grid gap-1 pt-4">
+            <button class="btn btn-primary" onclick="submitForm()" type="submit">Submit</button>
+
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+  <script src="../js/add patient.js"></script>
+</body>
+
+</html>

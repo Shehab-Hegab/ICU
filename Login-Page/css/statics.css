@@ -1,0 +1,185 @@
+ /* CSS CODE*/
+    html {
+      /* gradient only background */
+      /* background: linear-gradient(to right, #0074D9, #6600cc); */
+      background-image: url("../photos/ICU3.jpg");
+      background-size: cover;
+    }
+    .dropdown select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+
+    #icu-id option[disabled] {
+      color: gray;
+    }
+
+    .dropdown select:hover {
+      border-color: #3386FF;
+    }
+
+    .dropdown select:focus {
+      outline: none;
+      box-shadow: 0 0 5px #3386FF;
+    }
+    body {
+      font-family: "poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      margin: 20px;
+      font-family: "poppins", sans-serif;
+    }
+
+    .toggle-container {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 20px;
+      font-family: "poppins", sans-serif;
+    }
+
+
+    .box {
+      width: 30%;
+      color: white;
+      background-color: rgba(51, 134, 255, 0.7);
+      border: 1px solid rgba(222, 222, 223, 0.3);
+      padding: 20px;
+      margin-right: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 10px;
+      opacity: 0; 
+      transform: translateY(40px); 
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+      font-family: "poppins", sans-serif;
+    }
+
+    .toggle-box {
+      width: 30%;
+      color: white;
+      background-color: rgba(51, 134, 255, 0.7);
+      border: 1px solid rgba(222, 222, 223, 0.3);
+      padding: 20px;
+      margin-right: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 10px;
+      transform: translateY(40px); 
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+      font-family: "poppins", sans-serif;
+    }
+
+    /* .website-bar {
+      background-color: #3386FF;
+      color: #FFFFFF;
+      display: flex;
+      height: 50px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      transform: translateY(0); 
+      transition: transform 0.5s; 
+    }
+
+    .website-bar h1 {
+      font-weight: bold;
+      margin-right: 20px;
+      margin-left: 20px;
+    } */
+
+    /* .contact-button {
+      background-color: #3386FF;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    } */
+
+    .toggle-list {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 400px;
+      height: 60px;
+      margin: 90px auto;
+      display: block;
+      font-family: "poppins", sans-serif;
+    }
+
+    .box p {
+      text-align: center;
+      font-size: 2em;
+      font-family: "poppins", sans-serif;
+    }
+
+    /* ANIMATIONS CODE*/
+    .box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .box.pop-out {
+      animation: popOut 0.3s forwards;
+    }
+
+    @keyframes popOut {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0);
+      }
+    }
+
+    .box.fade-in {
+      animation: fadeIn 0.3s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .box.updated {
+      animation: updated 0.3s forwards;
+    }
+
+    @keyframes updated {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
