@@ -1,4 +1,3 @@
-Here’s a professional, polished `README.md` draft tailored for your [ICU project on GitHub](https://github.com/Shehab-Hegab/ICU), written to showcase your skills effectively for your CV and potential recruiters:
 
 ---
 
@@ -111,9 +110,7 @@ ICU/
 Machine Learning Engineer | Biomedical Engineering Student
 🔗 [LinkedIn](https://www.linkedin.com/in/shehab-hegab-5303491b7/) | 🌐 [GitHub](https://github.com/Shehab-Hegab)
 
----
 
-Let me know if you'd like a shorter version for your CV or portfolio, or if you want a LaTeX or PDF-friendly version for offline use.
 
 
 
